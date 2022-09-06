@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const databaseUrl = "mongodb://localhost:27017/wikidat?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
-// const databaseUrl = process.env.DATABASE_URL
+// const databaseUrl = "mongodb://localhost:27017/wikidat?readPreference=primary&appname=MongoDB%20Compass&ssl=false"
+const databaseUrl = process.env.DATABASE_URL
 
 const connect = mongoose.connect(databaseUrl, {
     useNewUrlParser: true,
